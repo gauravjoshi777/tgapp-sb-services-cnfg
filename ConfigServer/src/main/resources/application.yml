@@ -1,0 +1,17 @@
+# FILEPATH
+# Author: Gaurav Joshi
+# Date: 2024-01-30
+# Description: This is the configuration file for the config server
+server:
+  port: 9105
+  
+spring:  
+  application:
+    name: CONFIG-SERVER
+  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gauravjoshi777/microservice-first-config
+          clone-on-start: true
